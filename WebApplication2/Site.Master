@@ -75,11 +75,11 @@
                     <span class="navbar-text">
                         <% if (isLoggedIn)
                             { %>
-                        <a class="dropdown-item" href="LogOff.aspx">登出</a>
+                        <a class="nav-link" href="LogOff.aspx">登出</a>
                         <% }
                             else
                             { %>
-                        <a class="dropdown-item" href="LogOn.aspx">登入</a>
+                        <a class="nav-link" href="LogOn.aspx">登入</a>
                         <% } %>
                     </span>
                 </div>
@@ -89,7 +89,7 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <div class="bg-black">
-                <footer class="bg-black pb-1">
+                <footer class="bg-black pb-1  pt-4">
                     <p class="text-center text-white bg-black mb-4">&copy; <%: DateTime.Now.Year %> - Create by TeamC</p>
                 </footer>
             </div>
