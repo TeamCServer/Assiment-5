@@ -186,6 +186,10 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="service\buycar.aspx" />
+    <Content Include="service\buycarform.aspx" />
+    <Content Include="service\rentcar.aspx" />
+    <Content Include="service\rentcarform.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -234,6 +238,34 @@
       <DependentUpon>LogOn.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="service\buycar.aspx.cs">
+      <DependentUpon>buycar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="service\buycar.aspx.designer.cs">
+      <DependentUpon>buycar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="service\buycarform.aspx.cs">
+      <DependentUpon>buycarform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="service\buycarform.aspx.designer.cs">
+      <DependentUpon>buycarform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="service\rentcar.aspx.cs">
+      <DependentUpon>rentcar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="service\rentcar.aspx.designer.cs">
+      <DependentUpon>rentcar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="service\rentcarform.aspx.cs">
+      <DependentUpon>rentcarform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="service\rentcarform.aspx.designer.cs">
+      <DependentUpon>rentcarform.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
