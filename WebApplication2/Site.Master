@@ -45,8 +45,8 @@
         %>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark fixed-top pt-3 pb-3">
             <div class="container">
-                <a class="navbar-brand" href="Default.aspx">
-                    <img src="image/logo-02.png" alt="" height="48">
+                <a class="navbar-brand" href="<%= ResolveUrl("~/Default.aspx") %>">
+                    <img src="<%= ResolveUrl("~/image/logo-02.png") %>" alt="" height="48">
                 </a>
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between ps-4">
                     <ul class="navbar-nav flex-grow-1">
@@ -54,8 +54,8 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">服務
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="service/buycar.aspx">買車</a></li>
-                                <li><a class="dropdown-item" href="service/rentcar.aspx">租借</a></li>
+                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/service/buycar.aspx") %>">買車</a></li>
+                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/service/rentcar.aspx") %>">租借</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -71,13 +71,14 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">查詢
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">產品</a></li>
-                                <li><a class="dropdown-item" href="#">用戶資料</a></li>
-                                <li><a class="dropdown-item" href="#">司機</a></li>
+                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/search/product.aspx") %>">產品</a></li>
+                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/search/User.aspx") %>">用戶資料</a></li>
+                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/search/driver.aspx") %>">司機</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">關於我們</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">問題反饋</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="About.aspx">關於我們</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="Contact.aspx">聯繫我們</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="Comment.aspx">意見反饋</a></li>
                     </ul>
                     <span class="navbar-text">
                         <% if (isLoggedIn)
