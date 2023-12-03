@@ -54,7 +54,7 @@
                     <br />
                 </p>
                 <div>
-                    <a class="btn btn btn-primary" href="#gettingStartedTitle">立即購買</a>
+                    <a class="btn btn btn-primary" href="<%= ResolveUrl("~/service/buycar.aspx") %>">立即購買</a>
                 </div>
             </section>
             <section class="col-md-4" aria-labelledby="librariesTitle">
@@ -70,7 +70,7 @@
                     <br />
                 </p>
                 <div>
-                    <a class="btn btn btn-primary" href="#gettingStartedTitle">立即租借</a>
+                    <a class="btn btn btn-primary" href="<%= ResolveUrl("~/service/rentcar.aspx") %>">立即租借</a>
                 </div>
             </section>
             <section class="col-md-4" aria-labelledby="hostingTitle">
@@ -84,7 +84,7 @@
                     對本網站有任何的問題需要回饋嗎? 點此進行留言將會有專人為你服務
                 </p>
                 <div>
-                    <a class="btn btn btn-primary" href="#gettingStartedTitle">立即填表單</a>
+                    <a class="btn btn btn-primary" href="Contact.aspx">立即填表單</a>
                 </div>
             </section>
         </div>
@@ -100,7 +100,7 @@
                         我們是一個提供建築設備銷售、租賃、司機與承包商之間、司機與工具之間的撮合服務的平台，透過公開透明的資訊展示，讓需要機械或司機的承包商，或持有操作證但無法操作的司機不知道去哪裡找工作，找到合適的合作夥伴來滿足自己的需求
                     </p>
                     <div class="p-4">
-                        <a class="btn btn btn-primary " href="#gettingStartedTitle">了解更多</a>
+                        <a class="btn btn btn-primary " href="About.aspx">了解更多</a>
                     </div>
                 </div>
             </div>

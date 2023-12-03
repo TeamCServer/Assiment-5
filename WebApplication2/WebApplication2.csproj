@@ -123,6 +123,12 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="edit\edit_driver.aspx" />
+    <Content Include="edit\edit_product2.aspx">
+      <BrowseToURL>~/edit/edit_user.aspx~/edit/edit_user.aspx</BrowseToURL>
+    </Content>
+    <Content Include="edit\edit_user.aspx" />
+    <Content Include="edit\Edit_Users.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="image\2710477.png" />
@@ -233,6 +239,34 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit\edit_driver.aspx.cs">
+      <DependentUpon>edit_driver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit\edit_driver.aspx.designer.cs">
+      <DependentUpon>edit_driver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit\edit_product2.aspx.cs">
+      <DependentUpon>edit_product2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit\edit_product2.aspx.designer.cs">
+      <DependentUpon>edit_product2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit\edit_user.aspx.cs">
+      <DependentUpon>edit_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit\edit_user.aspx.designer.cs">
+      <DependentUpon>edit_user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit\Edit_Users.aspx.cs">
+      <DependentUpon>Edit_Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit\Edit_Users.aspx.designer.cs">
+      <DependentUpon>Edit_Users.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

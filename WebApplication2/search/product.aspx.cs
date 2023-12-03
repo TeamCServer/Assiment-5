@@ -42,17 +42,14 @@ namespace WebApplication2.search
         }
         private void PrepareDataSource()
         {
-            // 确保 search_Product 存在并包含 "Products" 表
             if (search_Product == null)
             {
-                // 初始化数据源
-                search_Product = new DataSet(); // 假设 search_Product 是一个 DataSet
+                search_Product = new DataSet();
             }
 
             if (!search_Product.Tables.Contains("Products"))
             {
-                // 创建 "Products" 表，或从数据库中加载数据
-                DataTable productsTable = LoadProductsDataFromDatabase(); // 请自行实现 LoadProductsDataFromDatabase 方法
+                DataTable productsTable = LoadProductsDataFromDatabase();
                 search_Product.Tables.Add(productsTable);
             }
         }
@@ -63,17 +60,12 @@ namespace WebApplication2.search
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                // 打开数据库连接
                 connection.Open();
-
-                // 使用 SqlDataAdapter 从数据库中获取数据
                 using (SqlDataAdapter adapter = new SqlDataAdapter("SELECT * FROM Products", connection))
                 {
-                    // 填充 DataTable
                     adapter.Fill(productsTable);
                 }
             }
-
             return productsTable;
         }
 

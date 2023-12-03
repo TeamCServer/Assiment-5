@@ -62,9 +62,9 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">編輯資料
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">產品</a></li>
-                                <li><a class="dropdown-item" href="#">用戶資料</a></li>
-                                <li><a class="dropdown-item" href="#">司機</a></li>
+                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/edit/edit_user.aspx") %>">產品</a></li>
+                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/edit/edit_user.aspx") %>">用戶資料</a></li>
+                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/edit/edit_driver.aspx") %>">司機</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -83,7 +83,7 @@
                     <span class="navbar-text">
                         <% if (isLoggedIn)
                             { %>
-                        <a class="nav-link" href="LogOff.aspx">登出</a>
+                        <a class="nav-link" href=" <%= ResolveUrl("~/LogOff.aspx") %>">登出</a>
                         <% }
                             else
                             { %>

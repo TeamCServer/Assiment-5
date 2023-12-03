@@ -36,9 +36,9 @@
                 <asp:BoundField DataField="condition" HeaderText="condition" SortExpression="condition" />
                 <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
                 <asp:TemplateField HeaderText="RentLink" ItemStyle-HorizontalAlign="Center">
-                    <ItemTemplate>
-                        <asp:HyperLink ID="lnkBuy" runat="server" Text="我要租車!" NavigateUrl='<%# GetPurchaseUrl(Eval("product_id"), Eval("price")) %>'></asp:HyperLink>
-                    </ItemTemplate>
+                <ItemTemplate>
+                    <asp:HyperLink ID="lnkBuy" runat="server" Text="我要租車!" NavigateUrl='<%# GetPurchaseUrl(Eval("product_id"), Eval("category_id")) %>'></asp:HyperLink>
+                </ItemTemplate>
                     <ItemStyle HorizontalAlign="Center"></ItemStyle>
                 </asp:TemplateField>
             </Columns>

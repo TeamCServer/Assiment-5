@@ -13,7 +13,7 @@ namespace Assignment_5_test.Service
         {
 
         }
-        protected string GetPurchaseUrl(object productId, object price)
+        protected string GetPurchaseUrl(object productId, object category)  //讀取產品跟category_id
         {
             bool isLoggedIn = Convert.ToBoolean(Session["LoggedIn"]);
 
@@ -21,7 +21,7 @@ namespace Assignment_5_test.Service
             {
 
                 string baseUrl = "~/Service/rentcarform.aspx";
-                string purchaseUrl = string.Format("{0}?product_id={1}&price={2}", ResolveUrl(baseUrl), productId, price);
+                string purchaseUrl = string.Format("{0}?product_id={1}&category={2}", ResolveUrl(baseUrl), productId, category);
                 return purchaseUrl;
 
             }

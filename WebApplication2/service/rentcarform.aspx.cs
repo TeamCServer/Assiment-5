@@ -48,11 +48,16 @@ namespace WebApplication1.Service
             if (contentTextBox != null)
                 contentTextBox.Text = "";
         }
-        protected string GetPurchaseUrl(object productId, object price)
+       
+
+        protected void calculate_Click(object sender, EventArgs e)
         {
-            string baseUrl = "~/Categories/first_one.aspx";
-            string purchaseUrl = string.Format("{0}?product_id={1}&price={2}", ResolveUrl(baseUrl), productId, price);
-            return purchaseUrl;
+
+        }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
