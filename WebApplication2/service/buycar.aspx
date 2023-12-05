@@ -35,25 +35,20 @@
                     <asp:TemplateField HeaderText="RentLink" ItemStyle-HorizontalAlign="Center">
                         <ItemTemplate>
                             <asp:HyperLink ID="lnkBuy" runat="server" Text="我要購買!" NavigateUrl='<%# GetPurchaseUrl(Eval("product_id"), Eval("price")) %>'></asp:HyperLink>
-
                         </ItemTemplate>
-
-                        <ItemStyle HorizontalAlign="Center"></ItemStyle>
-
+                        <ItemStyle HorizontalAlign="Center" Width="80px"></ItemStyle>
                     </asp:TemplateField>
                 </Columns>
-
-
-                <FooterStyle BackColor="#CCCCCC" />
-                <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
-                <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
-                <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
-                <SortedAscendingCellStyle BackColor="#F1F1F1" />
-                <SortedAscendingHeaderStyle BackColor="#808080" />
-                <SortedDescendingCellStyle BackColor="#CAC9C9" />
-                <SortedDescendingHeaderStyle BackColor="#383838" />
-
-
+                <EditRowStyle BackColor="#999999"></EditRowStyle>
+                <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" HorizontalAlign="Center"></FooterStyle>
+                <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" HorizontalAlign="Center"></HeaderStyle>
+                <PagerStyle HorizontalAlign="Center" BackColor="#284775" ForeColor="White"></PagerStyle>
+                <RowStyle BackColor="#F7F6F3" ForeColor="#333333" Height="70px" HorizontalAlign="Center"></RowStyle>
+                <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" HorizontalAlign="Center"></SelectedRowStyle>
+                <SortedAscendingCellStyle BackColor="#E9E7E2"></SortedAscendingCellStyle>
+                <SortedAscendingHeaderStyle BackColor="#506C8C"></SortedAscendingHeaderStyle>
+                <SortedDescendingCellStyle BackColor="#FFFDF8"></SortedDescendingCellStyle>
+                <SortedDescendingHeaderStyle BackColor="#6F8DAE"></SortedDescendingHeaderStyle>
             </asp:GridView>
         </div>
     </div>

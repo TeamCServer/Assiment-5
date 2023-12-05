@@ -24,32 +24,50 @@
                 }
         </style>
 
-        <asp:GridView ID="GridView1" runat="server" Width="100%" DataSourceID="rentcarData" AutoGenerateColumns="False" DataKeyNames="product_id" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
-            <AlternatingRowStyle BackColor="#CCCCCC" />
+        <asp:GridView ID="GridView1" runat="server" Width="100%" DataSourceID="rentcarData" AutoGenerateColumns="False" DataKeyNames="product_id"  ForeColor="#333333" GridLines="None">
+            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
-                <asp:BoundField DataField="product_id" HeaderText="product_id" ReadOnly="True" SortExpression="product_id" />
-                <asp:BoundField DataField="title" HeaderText="title" SortExpression="title" />
-                <asp:BoundField DataField="category_id" HeaderText="category_id" SortExpression="category_id" />
-                <asp:BoundField DataField="payment" HeaderText="payment" SortExpression="payment" />
-                <asp:BoundField DataField="location" HeaderText="location" SortExpression="location" />
-                <asp:BoundField DataField="country" HeaderText="country" SortExpression="country" />
-                <asp:BoundField DataField="condition" HeaderText="condition" SortExpression="condition" />
-                <asp:BoundField DataField="price" HeaderText="price" SortExpression="price" />
+                <asp:BoundField DataField="product_id" HeaderText="product_id" ReadOnly="True" SortExpression="product_id">
+                    <ItemStyle Width="100px" />
+                </asp:BoundField>
+                <asp:BoundField DataField="title" HeaderText="title" SortExpression="title">
+                    <ItemStyle Width="100px" />
+                </asp:BoundField>
+                <asp:BoundField DataField="category_id" HeaderText="category_id" SortExpression="category_id">
+                    <ItemStyle Width="100px" />
+                </asp:BoundField>
+                <asp:BoundField DataField="payment" HeaderText="payment" SortExpression="payment">
+                    <ItemStyle Width="100px" />
+                </asp:BoundField>
+                <asp:BoundField DataField="location" HeaderText="location" SortExpression="location">
+                    <ItemStyle Width="100px" />
+                </asp:BoundField>
+                <asp:BoundField DataField="country" HeaderText="country" SortExpression="country">
+                    <ItemStyle Width="100px" />
+                </asp:BoundField>
+                <asp:BoundField DataField="condition" HeaderText="condition" SortExpression="condition">
+                    <ItemStyle Width="100px" />
+                </asp:BoundField>
+                <asp:BoundField DataField="price" HeaderText="price" SortExpression="price">
+                    <ItemStyle Width="100px" />
+                </asp:BoundField>
                 <asp:TemplateField HeaderText="RentLink" ItemStyle-HorizontalAlign="Center">
-                <ItemTemplate>
-                    <asp:HyperLink ID="lnkBuy" runat="server" Text="我要租車!" NavigateUrl='<%# GetPurchaseUrl(Eval("product_id"), Eval("category_id")) %>'></asp:HyperLink>
-                </ItemTemplate>
-                    <ItemStyle HorizontalAlign="Center"></ItemStyle>
+                    <ItemTemplate>
+                        <asp:HyperLink ID="lnkBuy" runat="server" Text="我要租車!" NavigateUrl='<%# GetPurchaseUrl(Eval("product_id"), Eval("category_id")) %>'></asp:HyperLink>
+                    </ItemTemplate>
+                    <ItemStyle HorizontalAlign="Center"  Width="100px"></ItemStyle>
                 </asp:TemplateField>
             </Columns>
-            <FooterStyle BackColor="#CCCCCC" />
-            <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
-            <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
-            <SortedAscendingCellStyle BackColor="#F1F1F1" />
-            <SortedAscendingHeaderStyle BackColor="#808080" />
-            <SortedDescendingCellStyle BackColor="#CAC9C9" />
-            <SortedDescendingHeaderStyle BackColor="#383838" />
+            <EditRowStyle BackColor="#999999"></EditRowStyle>
+            <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" HorizontalAlign="Center"></FooterStyle>
+            <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" HorizontalAlign="Center"></HeaderStyle>
+            <PagerStyle HorizontalAlign="Center" BackColor="#284775" ForeColor="White"></PagerStyle>
+            <RowStyle BackColor="#F7F6F3" ForeColor="#333333" Height="70px" HorizontalAlign="Center"></RowStyle>
+            <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" HorizontalAlign="Center"></SelectedRowStyle>
+            <SortedAscendingCellStyle BackColor="#E9E7E2"></SortedAscendingCellStyle>
+            <SortedAscendingHeaderStyle BackColor="#506C8C"></SortedAscendingHeaderStyle>
+            <SortedDescendingCellStyle BackColor="#FFFDF8"></SortedDescendingCellStyle>
+            <SortedDescendingHeaderStyle BackColor="#6F8DAE"></SortedDescendingHeaderStyle>
         </asp:GridView>
     </div>
     <asp:SqlDataSource ID="rentcarData" runat="server" ConnectionString="<%$ ConnectionStrings:TeamCConnectionString3 %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>

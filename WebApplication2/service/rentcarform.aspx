@@ -1,10 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="rentcarform.aspx.cs" Inherits="WebApplication1.Service.rentcarform" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="pt-xxl-4 pb-xl-4"></div>
+<div class="pt-xxl-4 pb-xl-4"></div>
+<div class="pt-xxl-4 pb-xl-4"></div>
+<div class="container body-content pt-4 pb-xl-4">
     <asp:Panel ID="panelContactForm" runat="server">             <!-- 表格 -->
 
 
-    <label for="Name" class="bg-primary">UsersID:</label><br/> <!-- buyer_id-->
-    <asp:textbox type="text" id="users_id1" name="Users_id" runat="server" CssClass="bg-primary"></asp:textbox><br/>
+    <label for="Name">UsersID:</label><br/> <!-- buyer_id-->
+    <asp:textbox type="text" id="users_id1" name="Users_id" runat="server"></asp:textbox><br/>
 
     <label for="product_id">ProductID:</label><br /> <!-- product_id-->
     <asp:textbox type="text" id="product_id1" name="product_id" runat="server"></asp:textbox><br/>
@@ -36,4 +41,5 @@
     <asp:Button ID="btnSubmit" runat="server" Text="送出" OnClick="btnSubmit_Click" />
     <asp:Label ID="Label1" runat="server" Visible="false" ForeColor="Green"></asp:Label>
 </asp:Panel>
+    </div>
 </asp:Content>

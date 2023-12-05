@@ -105,5 +105,7 @@ namespace WebApplication2.search
                 GridView2.DataBind();
             }
         }
+        
+
     }
 }

@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace WebApplication2.search
@@ -16,13 +17,17 @@ namespace WebApplication2.search
         private static DataSet search_User;
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+
             if (!IsPostBack)
             {
                 PrepareDataSource();
                 BindData();
                 BindDropDownList();
+               
             }
         }
+        
         private void BindDropDownList()
         {
             string query = "SELECT DISTINCT lastName FROM Users";

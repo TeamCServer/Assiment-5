@@ -16,7 +16,6 @@ namespace Assignment_5_test.Service
         {
             if (!IsPostBack)
             {
-
                 if (Request.QueryString["product_id"] != null && Request.QueryString["price"] != null)
                 {                   
                     string product_id = Request.QueryString["product_id"];
@@ -25,8 +24,6 @@ namespace Assignment_5_test.Service
                     product_id1.Text = product_id;
                     users_id1.Text = Session["UserId"].ToString();
                     email.Text = Session["UserEmail"].ToString();
-
-
                 }
             }
 

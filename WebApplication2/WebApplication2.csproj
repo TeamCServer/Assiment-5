@@ -128,7 +128,6 @@
       <BrowseToURL>~/edit/edit_user.aspx~/edit/edit_user.aspx</BrowseToURL>
     </Content>
     <Content Include="edit\edit_user.aspx" />
-    <Content Include="edit\Edit_Users.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="image\2710477.png" />
@@ -260,13 +259,6 @@
     </Compile>
     <Compile Include="edit\edit_user.aspx.designer.cs">
       <DependentUpon>edit_user.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="edit\Edit_Users.aspx.cs">
-      <DependentUpon>Edit_Users.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="edit\Edit_Users.aspx.designer.cs">
-      <DependentUpon>Edit_Users.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
