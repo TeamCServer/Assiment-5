@@ -17,13 +17,13 @@
             <!-- product_id-->
             <asp:TextBox type="text" ID="product_id1" name="product_id" runat="server"></asp:TextBox><br />
 
-            <label for="email">聯絡信箱:</label><br />
+            <label for="email">Email:</label><br />
             <asp:TextBox type="text" ID="email" name="email" runat="server"></asp:TextBox><br />
 
-            <label for="price">金額:</label><br />
+            <label for="price">Price:</label><br />
             <asp:TextBox ID="price1" runat="server" ></asp:TextBox><br />
 
-            <label for="content">備註:</label><br />
+            <label for="content">Note:</label><br />
             <textarea id="content" name="content" required></textarea><br />
             <!-- required必填寫-->
             
@@ -31,7 +31,7 @@
             
 
         </asp:Panel>
-        <asp:Button ID="btnSubmit" runat="server" Text="送出" OnClick="btnSubmit_Click" />
+        <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
         <asp:Label ID="Label1" runat="server" Visible="false" ForeColor="Green"></asp:Label>
     </div>
 </asp:Content>

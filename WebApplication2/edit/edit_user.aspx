@@ -16,7 +16,7 @@
             <asp:TextBox Text='<%# Bind("lastName") %>' runat="server" ID="lastNameTextBox" /><br />
                 email:
             <asp:TextBox Text='<%# Bind("email") %>' runat="server" ID="emailTextBox" /><br />
-                <asp:LinkButton runat="server" Text="更新" CommandName="Update" ID="UpdateButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="取消" CommandName="Cancel" ID="UpdateCancelButton" CausesValidation="False" />
+                <asp:LinkButton runat="server" Text="Refesh" CommandName="Update" ID="UpdateButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="Cancel" CommandName="Cancel" ID="UpdateCancelButton" CausesValidation="False" />
             </EditItemTemplate>
             <InsertItemTemplate>
                 user_id:
@@ -27,7 +27,7 @@
             <asp:TextBox Text='<%# Bind("lastName") %>' runat="server" ID="lastNameTextBox" /><br />
                 email:
             <asp:TextBox Text='<%# Bind("email") %>' runat="server" ID="emailTextBox" /><br />
-                <asp:LinkButton runat="server" Text="插入" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="取消" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
+                <asp:LinkButton runat="server" Text="Add" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="Cancel" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
             </InsertItemTemplate>
             <ItemTemplate>
                 user_id:
@@ -38,7 +38,7 @@
             <asp:Label Text='<%# Bind("lastName") %>' runat="server" ID="lastNameLabel" /><br />
                 email:
             <asp:Label Text='<%# Bind("email") %>' runat="server" ID="emailLabel" /><br />
-                <asp:LinkButton runat="server" Text="編輯" CommandName="Edit" ID="EditButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="刪除" CommandName="Delete" ID="DeleteButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="新增" CommandName="New" ID="NewButton" CausesValidation="False" />
+                <asp:LinkButton runat="server" Text="Edit" CommandName="Edit" ID="EditButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="Delete" CommandName="Delete" ID="DeleteButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="Add" CommandName="New" ID="NewButton" CausesValidation="False" />
             </ItemTemplate>
         </asp:FormView>
         <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:TeamCConnectionString %>' DeleteCommand="DELETE FROM [Users] WHERE [user_id] = @user_id" InsertCommand="INSERT INTO [Users] ([user_id], [firstName], [lastName], [email]) VALUES (@user_id, @firstName, @lastName, @email)" SelectCommand="SELECT * FROM [Users] WHERE ([user_id] = @user_id)" UpdateCommand="UPDATE [Users] SET [firstName] = @firstName, [lastName] = @lastName, [email] = @email WHERE [user_id] = @user_id">

@@ -7,27 +7,28 @@
         <div class="pt-xxl-4 pb-xxl-4"></div>
         <div class="container body-content">
             <!--   <h2 id="title"><%: Title %>.</h2>  -->
-            <h3>聯絡我們</h3>
-            為了提供您最快速的服務，請您先瀏覽相關說明。若仍然無法回答您的問題請留下您的問題，我們將竭誠為您服務。<br />
+            <h3>Cantact Us</h3>
+            In order to provide you with the quickest service, please browse through the relevant instructions first. 
+            If you still can't find the answer to your question, please leave your query, and we'll be dedicated to 
+            assisting you.<br />
             <br />
             <br />
             TeamC Company<br />
-            106335 臺北市大安區基隆路 4 段 43 號<br />
             No.43, Keelung Rd., Sec.4, Da'an Dist., Taipei City 106335, Taiwan (R.O.C.)<br />
             Tel: 886-2-27333141<br />
             <br />
             <asp:Panel ID="panelContactForm" runat="server">
                 <!-- 表格 -->
-                <label for="Name">姓名:</label><br />
+                <label for="Name">Name:</label><br />
                 <input type="text" id="Name" name="Name" required /><br />
 
-                <label for="email">電子信箱:</label><br />
+                <label for="email">Email:</label><br />
                 <input type="text" id="email" name="email" required /><br />
 
-                <label for="phoneNumber">聯絡電話:</label><br />
+                <label for="phoneNumber">Phone:</label><br />
                 <input type="tel" id="phoneNumber" name="phoneNumber" required /><br />
 
-                <label for="content">事由:</label><br />
+                <label for="content">Content:</label><br />
                 <textarea id="content" name="content" required></textarea><br />
                 <!-- required必填寫-->
                 <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />

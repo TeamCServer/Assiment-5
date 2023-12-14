@@ -4,7 +4,7 @@
     <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="container body-content">
-        <h1 style="text-align: center">出租車輛</h1>
+        <h1 style="text-align: center">Vehicle Rental Services</h1>
         <style>
             .center-container {
                 text-align: center;
@@ -53,7 +53,7 @@
                 </asp:BoundField>
                 <asp:TemplateField HeaderText="RentLink" ItemStyle-HorizontalAlign="Center">
                     <ItemTemplate>
-                        <asp:HyperLink ID="lnkBuy" runat="server" Text="我要租車!" NavigateUrl='<%# GetPurchaseUrl(Eval("product_id"), Eval("category_id")) %>'></asp:HyperLink>
+                        <asp:HyperLink ID="lnkBuy" runat="server" Text="Rent Now!" NavigateUrl='<%# GetPurchaseUrl(Eval("product_id"), Eval("category_id")) %>'></asp:HyperLink>
                     </ItemTemplate>
                     <ItemStyle HorizontalAlign="Center"  Width="100px"></ItemStyle>
                 </asp:TemplateField>

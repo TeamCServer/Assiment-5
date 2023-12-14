@@ -5,7 +5,7 @@
     <div class="pt-xxl-4 pb-xl-4"></div>
     <div class="pt-xxl-4 pb-xl-4"></div>
     <div class="container body-content pt-4 pb-xl-4">
-        <h1 style="text-align: center">編輯司機
+        <h1 style="text-align: center">Edit Driver Imformation
         </h1>
         <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="driver_id" DataValueField="driver_id" AutoPostBack="True"></asp:DropDownList>
         <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:TeamCConnectionString %>' SelectCommand="SELECT [driver_id] FROM [Driver]"></asp:SqlDataSource>
@@ -52,7 +52,7 @@
             <asp:TextBox Text='<%# Bind("price") %>' runat="server" ID="priceTextBox" /><br />
                 phoneNumber:
             <asp:TextBox Text='<%# Bind("phoneNumber") %>' runat="server" ID="phoneNumberTextBox" /><br />
-                <asp:LinkButton runat="server" Text="插入" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="取消" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
+                <asp:LinkButton runat="server" Text="Add" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="Cancel" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
             </InsertItemTemplate>
             <ItemTemplate>
                 driver_id:
@@ -64,9 +64,9 @@
                 phoneNumber:
             <asp:Label Text='<%# Bind("phoneNumber") %>' runat="server" ID="phoneNumberLabel" /><br />
 
-                <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="編輯" />
-                &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="刪除" />
-                &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="新增" />
+                <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edir" />
+                &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
+                &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="Add" />
 
             </ItemTemplate>
         </asp:FormView>

@@ -6,51 +6,7 @@
         <div class="pt-xxl-4 pb-xxl-4"></div>
         <div class="container body-content">
             <div class="h-50">
-                <h2 id="title"><%: Title %>.</h2>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
-                <h3>Your application description page.</h3>
-                <p>Use this area to provide additional information.</p>
+                
             </div>
         </div>
         <div class="waveWrapper waveAnimation">

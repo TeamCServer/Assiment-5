@@ -4,7 +4,7 @@
     <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="container body-content">
-        <h1 style="text-align: center">編輯產品
+        <h1 style="text-align: center">Edit Product
         </h1>
         <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource3" DataTextField="product_id" DataValueField="product_id" AutoPostBack="True">
         </asp:DropDownList>
@@ -27,7 +27,7 @@
             <asp:TextBox Text='<%# Bind("condition") %>' runat="server" ID="conditionTextBox" /><br />
                 price:
             <asp:TextBox Text='<%# Bind("price") %>' runat="server" ID="priceTextBox" /><br />
-                <asp:LinkButton runat="server" Text="更新" CommandName="Update" ID="UpdateButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="取消" CommandName="Cancel" ID="UpdateCancelButton" CausesValidation="False" />
+                <asp:LinkButton runat="server" Text="Update" CommandName="Update" ID="UpdateButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="取消" CommandName="Cancel" ID="UpdateCancelButton" CausesValidation="False" />
             </EditItemTemplate>
             <InsertItemTemplate>
                 product_id:
@@ -46,7 +46,7 @@
             <asp:TextBox Text='<%# Bind("condition") %>' runat="server" ID="conditionTextBox" /><br />
                 price:
             <asp:TextBox Text='<%# Bind("price") %>' runat="server" ID="priceTextBox" /><br />
-                <asp:LinkButton runat="server" Text="插入" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="取消" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
+                <asp:LinkButton runat="server" Text="Add" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="取消" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
             </InsertItemTemplate>
             <ItemTemplate>
                 product_id:
@@ -65,7 +65,7 @@
             <asp:Label Text='<%# Bind("condition") %>' runat="server" ID="conditionLabel" /><br />
                 price:
             <asp:Label Text='<%# Bind("price") %>' runat="server" ID="priceLabel" /><br />
-                <asp:LinkButton runat="server" Text="編輯" CommandName="Edit" ID="EditButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="刪除" CommandName="Delete" ID="DeleteButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="新增" CommandName="New" ID="NewButton" CausesValidation="False" />
+                <asp:LinkButton runat="server" Text="Edit" CommandName="Edit" ID="EditButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="刪除" CommandName="Delete" ID="DeleteButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="新增" CommandName="New" ID="NewButton" CausesValidation="False" />
             </ItemTemplate>
         </asp:FormView>
         <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:TeamCConnectionString %>' DeleteCommand="DELETE FROM [Products] WHERE [product_id] = @product_id" InsertCommand="INSERT INTO [Products] ([product_id], [title], [category_id], [payment], [location], [country], [condition], [price]) VALUES (@product_id, @title, @category_id, @payment, @location, @country, @condition, @price)" SelectCommand="SELECT * FROM [Products] WHERE ([product_id] = @product_id)" UpdateCommand="UPDATE [Products] SET [title] = @title, [category_id] = @category_id, [payment] = @payment, [location] = @location, [country] = @country, [condition] = @condition, [price] = @price WHERE [product_id] = @product_id">

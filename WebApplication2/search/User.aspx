@@ -4,7 +4,7 @@
     <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="pt-xxl-4 pb-xxl-4"></div>
-    <h1 style="text-align: center">查詢司機資料</h1>
+    <h1 style="text-align: center">Find User</h1>
     <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="container">
         <div class="row">
@@ -16,7 +16,7 @@
                             <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.807.807 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155 1.806 0 4.037-.084 5.592-.155A1.479 1.479 0 0 0 15 9.611v-.413c0-.099-.01-.197-.03-.294l-.335-1.68a.807.807 0 0 0-.43-.563 1.807 1.807 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3z" />
                         </svg>
                     </span>
-                    <asp:TextBox ID="TextBox18" runat="server" CssClass="form-control" Placeholder="使用者ID" aria-label="產品ID" aria-describedby="addon-wrapping"></asp:TextBox>
+                    <asp:TextBox ID="TextBox18" runat="server" CssClass="form-control" Placeholder="User ID" aria-label="產品ID" aria-describedby="addon-wrapping"></asp:TextBox>
                 </div>
             </div>
             <div class="col">
@@ -26,12 +26,12 @@
                             <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5" />
                         </svg>
                     </span>
-                    <asp:TextBox ID="TextBox19" runat="server" CssClass="form-control" Placeholder="名" aria-label="Username" aria-describedby="addon-wrapping"></asp:TextBox>
+                    <asp:TextBox ID="TextBox19" runat="server" CssClass="form-control" Placeholder="Name" aria-label="Username" aria-describedby="addon-wrapping"></asp:TextBox>
                 </div>
             </div>
             <div class="col">
                 <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" CssClass="form-select" AppendDataBoundItems="true" aria-label="Default select example">
-                    <asp:ListItem Text="選擇姓" Value="" Selected="True"></asp:ListItem>
+                    <asp:ListItem Text="Choose First Name" Value="" Selected="True"></asp:ListItem>
                 </asp:DropDownList>
             </div>
             <div class="col">
@@ -42,12 +42,12 @@
                                 <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
                             </svg>
                         </span>
-                        <asp:TextBox ID="TextBox20" runat="server" CssClass="form-control" Placeholder="信箱" aria-label="Username" aria-describedby="addon-wrapping"></asp:TextBox>
+                        <asp:TextBox ID="TextBox20" runat="server" CssClass="form-control" Placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping"></asp:TextBox>
                     </div>
                 </div>
             </div>
             <div class="col-1">
-                <asp:Button ID="Button1" runat="server" Text="查詢" CssClass="btn btn-primary" OnClick="Button1_Click" />
+                <asp:Button ID="Button1" runat="server" Text="Search" CssClass="btn btn-primary" OnClick="Button1_Click" />
             </div>
         </div>
     </div>

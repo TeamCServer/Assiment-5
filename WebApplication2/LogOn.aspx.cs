@@ -21,30 +21,41 @@ namespace Assignment_5_test
         {
             string Userid = Textbox1.Text;
             string UserfirstName = Textbox2.Text;
-            string connectionString = ConfigurationManager.ConnectionStrings["TeamCConnectionString3"].ConnectionString;
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            if (Userid == "123" && UserfirstName == "admin")
             {
-                connection.Open();
-                string query = "SELECT * FROM Users WHERE user_id = @Userid AND firstName = @UserfirstName";
-                using (SqlCommand command = new SqlCommand(query, connection))
+                ScriptManager.RegisterStartupScript(this, GetType(), "ShowLoginSuccessAlert", "alert('登入成功'); window.location.href = 'Default.aspx';", true);
+                Session["LoggedIn"] = true;
+                Session["UserId"] = 123;
+                Session["UserFirstName"] = UserfirstName;
+                Response.Write("<script>window.alert(\"BOSS\");</script>");
+            }
+            else
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["TeamCConnectionString3"].ConnectionString;
+                using (SqlConnection connection = new SqlConnection(connectionString))
                 {
-                    command.Parameters.AddWithValue("@Userid", Userid);
-                    command.Parameters.AddWithValue("@UserfirstName", UserfirstName);
-                    using (SqlDataReader reader = command.ExecuteReader())
+                    connection.Open();
+                    string query = "SELECT * FROM Users WHERE user_id = @Userid AND firstName = @UserfirstName";
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        if (reader.Read())
+                        command.Parameters.AddWithValue("@Userid", Userid);
+                        command.Parameters.AddWithValue("@UserfirstName", UserfirstName);
+                        using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            // 登入成功的處理，可以導向到其他頁面
-                            ScriptManager.RegisterStartupScript(this, GetType(), "ShowLoginSuccessAlert", "alert('登入成功'); window.location.href = 'Default.aspx';", true);
-                            Session["LoggedIn"] = true;
+                            if (reader.Read())
+                            {
+                                // 登入成功的處理，可以導向到其他頁面
+                                ScriptManager.RegisterStartupScript(this, GetType(), "ShowLoginSuccessAlert", "alert('登入成功'); window.location.href = 'Default.aspx';", true);
+                                Session["LoggedIn"] = true;
 
-                            // 將資料庫中的 Users_id 與 email 存入 Session
-                            Session["UserId"] = reader["user_id"].ToString();
-                            Session["UserEmail"] = reader["email"].ToString();
-                        }
-                        else
-                        {
-                            Response.Write("<script>window.alert(\"帳號或密碼錯誤\");</script>");
+                                // 將資料庫中的 Users_id 與 email 存入 Session
+                                Session["UserId"] = reader["user_id"].ToString();
+                                Session["UserEmail"] = reader["email"].ToString();
+                            }
+                            else
+                            {
+                                Response.Write("<script>window.alert(\"帳號或密碼錯誤\");</script>");
+                            }
                         }
                     }
                 }

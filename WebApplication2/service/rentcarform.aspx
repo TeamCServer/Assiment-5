@@ -14,31 +14,31 @@
     <label for="product_id">ProductID:</label><br /> <!-- product_id-->
     <asp:textbox type="text" id="product_id1" name="product_id" runat="server"></asp:textbox><br/>
 
-    <label for="price">類別編號:</label><br/>   
+    <label for="price">Category:</label><br/>   
     <asp:textbox type="text" ID="category1" runat="server"></asp:textbox><br/>
 
-    <label for="email">聯絡信箱:</label><br/>
+    <label for="email">Email:</label><br/>
     <asp:textbox type="text" id="email" name="email" runat="server"></asp:textbox><br/>
 
     <fieldset>
-    <label for="driver">是否需要司機:</label><br/>
+    <label for="driver">Need driver or not:</label><br/>
     <asp:RadioButtonList ID="rblDriver" runat="server">
-        <asp:ListItem Text="是" Value="1" />
-        <asp:ListItem Text="否" Value="0" />
+        <asp:ListItem Text="Yes" Value="1" />
+        <asp:ListItem Text="No" Value="0" />
     </asp:RadioButtonList>
     </fieldset>
 
-    <label for="days">天數:</label><br/>   
+    <label for="days">Days:</label><br/>   
     <asp:textbox type="text" id="days1" runat="server"></asp:textbox><br/>
 
-    <label for="price">金額:</label>
-    <asp:Button ID="Button1" runat="server" Text="計算" OnClick="calculate_Click" /><br/>
+    <label for="price">Price:</label>
+    <asp:Button ID="Button1" runat="server" Text="Calculate" OnClick="calculate_Click" /><br/>
     <asp:textbox ID="price1" runat="server"></asp:textbox><br/>
 
-    <label for="content">備註:</label><br/>
+    <label for="content">Note:</label><br/>
     <textarea id="content" name="content" ></textarea><br/>
 
-    <asp:Button ID="btnSubmit" runat="server" Text="送出" OnClick="btnSubmit_Click" />
+    <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" />
     <asp:Label ID="Label1" runat="server" Visible="false" ForeColor="Green"></asp:Label>
 </asp:Panel>
     </div>

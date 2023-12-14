@@ -19,7 +19,7 @@
         <asp:TextBox ID="Textbox2" runat="server" class="midtb"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="Button1" runat="server" Text="登入" class="midbt" OnClick="Button1_Click"></asp:Button>
+        <asp:Button ID="Button1" runat="server" Text="Log In" class="midbt btn-primary" OnClick="Button1_Click"></asp:Button>
     </div>
     <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="pt-xxl-4 pb-xxl-4"></div>

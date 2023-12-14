@@ -142,45 +142,48 @@
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between ps-4">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">服務
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Service
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/service/buycar.aspx") %>">買車</a></li>
-                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/service/rentcar.aspx") %>">租借</a></li>
+                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/service/buycar.aspx") %>">Buy Car</a></li>
+                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/service/rentcar.aspx") %>">Rent Car</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">編輯資料
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Edit
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" id="editProduct" runat="server">產品</a></li>
-                                <li><a class="dropdown-item" id="editUser" runat="server">用戶資料</a></li>
-                                <li><a class="dropdown-item" id="editDriver" runat="server">司機</a></li>
-                            </ul>
+     <li><a class="dropdown-item" id="editProduct" runat="server">產品</a></li>
+      <% if (Session["UserId"] != null && Session["UserFirstName"] != null && Session["UserId"].ToString() == "123" && Session["UserFirstName"].ToString() == "admin") { %>
+     <li><a class="dropdown-item" id="editUser" runat="server">用戶資料</a></li>
+     <% } 
+     else { %>
+     <% } %>     
+     <li><a class="dropdown-item" id="editDriver" runat="server">司機</a></li>                                
+ </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">查詢
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Serach
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/search/product.aspx") %>">產品</a></li>
-                                <li><a class="dropdown-item" id="sUser" runat="server">用戶資料</a></li>
+                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/search/product.aspx") %>">Product</a></li>
+                                <li><a class="dropdown-item" id="sUser" runat="server">User</a></li>
 
 
-                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/search/driver.aspx") %>">司機</a></li>
+                                <li><a class="dropdown-item" href="<%= ResolveUrl("~/search/driver.aspx") %>">Driver</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="About.aspx">關於我們</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="Contact.aspx">聯繫我們</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="Comment.aspx">意見反饋</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="About.aspx">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="Contact.aspx">Contact Us</a></li>
                     </ul>
                     <span class="navbar-text">
                         <% if (isLoggedIn)
                             { %>
-                        <a class="nav-link" href=" <%= ResolveUrl("~/LogOff.aspx") %>">登出</a>
+                        <a class="nav-link" href=" <%= ResolveUrl("~/LogOff.aspx") %>">Log Out</a>
                         <% }
                             else
                             { %>
-                        <a class="nav-link" href="<%= ResolveUrl("~/LogOn.aspx") %>">登入</a>
+                        <a class="nav-link" href="<%= ResolveUrl("~/LogOn.aspx") %>">Log In</a>
                         <% } %>
                     </span>
                 </div>

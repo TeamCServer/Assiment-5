@@ -28,12 +28,12 @@ namespace WebApplication2
                 if (isLoggedIn)
                 {
                     sUserLink.HRef = ResolveUrl("~/search/User.aspx");
-                    sUserLink.InnerText = "用戶資料";
+                    sUserLink.InnerText = "User";
                 }
                 else
                 {
                     sUserLink.HRef = ResolveUrl("~/LogOn.aspx");
-                    sUserLink.InnerText = "用戶資料";
+                    sUserLink.InnerText = "User";
                 }
             }
             if (editUserLink != null)
@@ -41,12 +41,12 @@ namespace WebApplication2
                 if (isLoggedIn)
                 {
                     editUserLink.HRef = ResolveUrl("~/edit/edit_user.aspx");
-                    editUserLink.InnerText = "編輯用戶資料";
+                    editUserLink.InnerText = "Edit User";
                 }
                 else
                 {
                     editUserLink.HRef = ResolveUrl("~/LogOn.aspx");
-                    editUserLink.InnerText = "編輯用戶資料";
+                    editUserLink.InnerText = "Edit User";
                 }
             }
             if (editDriverLink != null)
@@ -54,12 +54,12 @@ namespace WebApplication2
                 if (isLoggedIn)
                 {
                     editDriverLink.HRef = ResolveUrl("~/edit/edit_driver.aspx");
-                    editDriverLink.InnerText = "編輯司機資料";
+                    editDriverLink.InnerText = "Edit Driver";
                 }
                 else
                 {
                     editDriverLink.HRef = ResolveUrl("~/LogOn.aspx");
-                    editDriverLink.InnerText = "編輯司機資料";
+                    editDriverLink.InnerText = "Edit Driver";
                 }
             }
             if (editProductLink != null)
@@ -67,12 +67,12 @@ namespace WebApplication2
                 if (isLoggedIn)
                 {
                     editProductLink.HRef = ResolveUrl("~/edit/edit_driver.aspx");
-                    editProductLink.InnerText = "編輯產品資訊";
+                    editProductLink.InnerText = "Edit Product";
                 }
                 else
                 {
                     editProductLink.HRef = ResolveUrl("~/LogOn.aspx");
-                    editProductLink.InnerText = "編輯產品資訊";
+                    editProductLink.InnerText = "Edit Product";
                 }
             }
         }
