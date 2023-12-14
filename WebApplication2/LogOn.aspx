@@ -12,7 +12,7 @@
     <div class="module text-center">
         <asp:Label ID="Labell" runat="server" Text="Userid" CssClass="text-center"></asp:Label>
         <br />
-        <asp:TextBox ID="Textbox1" runat="server" class="midtb"></asp:TextBox>
+        <asp:TextBox ID="Textbox1" runat="server" class="midtb" TextMode="Password"></asp:TextBox>
         <br />
         <asp:Label ID="Label2" runat="server" Text="UserName"></asp:Label>
         <br />

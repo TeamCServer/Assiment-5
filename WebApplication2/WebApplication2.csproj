@@ -132,9 +132,12 @@
     <Content Include="Global.asax" />
     <Content Include="image\2710477.png" />
     <Content Include="image\5699751.png" />
+    <Content Include="image\7134128.png" />
     <Content Include="image\8255514.png" />
     <Content Include="image\9701.png" />
+    <Content Include="image\corporate-business-handshake-partners.jpg" />
     <Content Include="image\logo-02.png" />
+    <Content Include="image\two-young-businessman-having-successful-meeting-restaurant.jpg" />
     <Content Include="LogOff.aspx" />
     <Content Include="LogOn.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />

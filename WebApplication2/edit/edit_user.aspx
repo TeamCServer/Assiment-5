@@ -1,26 +1,30 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="edit_user.aspx.cs" Inherits="Assighnment_5_Edit_UDP.Category.edit_user" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="pt-xxl-4"></div>
     <div class="pt-xxl-4 pb-xxl-4"></div>
+    <img src='<%= ResolveUrl("~/image/7134128.png") %>' class="img-fluid" alt="...">
+    <div class="pt-xxl-4 pb-xxl-4"></div>
+    <h1 style="text-align: center">Edit User Imformation</h1>
     <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="container body-content">
         <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource3" DataTextField="user_id" DataValueField="user_id" AutoPostBack="True"></asp:DropDownList>
         <asp:SqlDataSource runat="server" ID="SqlDataSource3" ConnectionString='<%$ ConnectionStrings:TeamCConnectionString %>' SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
         <asp:FormView ID="FormView1" runat="server" DataKeyNames="user_id" DataSourceID="SqlDataSource1">
-            <EditItemTemplate>
+            <EditItemTemplate><br /><br />
                 user_id:
-            <asp:Label Text='<%# Eval("user_id") %>' runat="server" ID="user_idLabel1" /><br />
-                firstName:
-            <asp:TextBox Text='<%# Bind("firstName") %>' runat="server" ID="firstNameTextBox" /><br />
-                lastName:
-            <asp:TextBox Text='<%# Bind("lastName") %>' runat="server" ID="lastNameTextBox" /><br />
-                email:
-            <asp:TextBox Text='<%# Bind("email") %>' runat="server" ID="emailTextBox" /><br />
+            <asp:Label Text='<%# Eval("user_id") %>' runat="server" ID="user_idLabel1" /><br /><br />
+                firstName:<br />
+            <asp:TextBox Text='<%# Bind("firstName") %>' runat="server" ID="firstNameTextBox" /><br /><br />
+                lastName:<br />
+            <asp:TextBox Text='<%# Bind("lastName") %>' runat="server" ID="lastNameTextBox" /><br /><br />
+                email:<br />
+            <asp:TextBox Text='<%# Bind("email") %>' runat="server" ID="emailTextBox" /><br /><br />
                 <asp:LinkButton runat="server" Text="Refesh" CommandName="Update" ID="UpdateButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="Cancel" CommandName="Cancel" ID="UpdateCancelButton" CausesValidation="False" />
             </EditItemTemplate>
             <InsertItemTemplate>
-                user_id:
-            <asp:TextBox Text='<%# Bind("user_id") %>' runat="server" ID="user_idTextBox" /><br />
+                user_id:<br />
+            <asp:TextBox Text='<%# Bind("user_id") %>' runat="server" ID="user_idTextBox" /><br /><br />
                 firstName:
             <asp:TextBox Text='<%# Bind("firstName") %>' runat="server" ID="firstNameTextBox" /><br />
                 lastName:
@@ -31,13 +35,13 @@
             </InsertItemTemplate>
             <ItemTemplate>
                 user_id:
-            <asp:Label Text='<%# Eval("user_id") %>' runat="server" ID="user_idLabel" /><br />
+            <asp:Label Text='<%# Eval("user_id") %>' runat="server" ID="user_idLabel" /><br /><br />
                 firstName:
-            <asp:Label Text='<%# Bind("firstName") %>' runat="server" ID="firstNameLabel" /><br />
+            <asp:Label Text='<%# Bind("firstName") %>' runat="server" ID="firstNameLabel" /><br /><br />
                 lastName:
-            <asp:Label Text='<%# Bind("lastName") %>' runat="server" ID="lastNameLabel" /><br />
+            <asp:Label Text='<%# Bind("lastName") %>' runat="server" ID="lastNameLabel" /><br /><br />
                 email:
-            <asp:Label Text='<%# Bind("email") %>' runat="server" ID="emailLabel" /><br />
+            <asp:Label Text='<%# Bind("email") %>' runat="server" ID="emailLabel" /><br /><br />
                 <asp:LinkButton runat="server" Text="Edit" CommandName="Edit" ID="EditButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="Delete" CommandName="Delete" ID="DeleteButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="Add" CommandName="New" ID="NewButton" CausesValidation="False" />
             </ItemTemplate>
         </asp:FormView>
@@ -98,4 +102,5 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     </div>
+    <div class="pt-xxl-4 pb-xxl-4"></div><div class="pt-xxl-4 pb-xxl-4"></div><div class="pt-xxl-4 pb-xxl-4"></div>
 </asp:Content>

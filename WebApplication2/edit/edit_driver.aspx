@@ -1,12 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="edit_driver.aspx.cs" Inherits="Assighnment_5_Edit_UDP.Category.edit_driver1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="pt-xxl-4 pb-xl-4"></div>
-    <div class="pt-xxl-4 pb-xl-4"></div>
-    <div class="pt-xxl-4 pb-xl-4"></div>
+    <div class="pt-xxl-4"></div>
+    <div class="pt-xxl-4 pb-xxl-4"></div>
+    <img src='<%= ResolveUrl("~/image/7134128.png") %>' class="img-fluid" alt="...">
+    <div class="pt-xxl-4 pb-xxl-4"></div>
+    <h1 style="text-align: center">Edit Driver Imformation</h1>
+    <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="container body-content pt-4 pb-xl-4">
-        <h1 style="text-align: center">Edit Driver Imformation
-        </h1>
         <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="driver_id" DataValueField="driver_id" AutoPostBack="True"></asp:DropDownList>
         <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:TeamCConnectionString %>' SelectCommand="SELECT [driver_id] FROM [Driver]"></asp:SqlDataSource>
 
@@ -34,35 +35,35 @@
         <asp:FormView ID="FormView1" runat="server" DataKeyNames="driver_id" DataSourceID="SqlDataSource3" DefaultMode="Insert">
             <EditItemTemplate>
                 driver_id:
-            <asp:Label Text='<%# Eval("driver_id") %>' runat="server" ID="driver_idLabel1" /><br />
+            <asp:Label Text='<%# Eval("driver_id") %>' runat="server" ID="driver_idLabel1" /><br /><br />
                 age:
-            <asp:TextBox Text='<%# Bind("age") %>' runat="server" ID="ageTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("age") %>' runat="server" ID="ageTextBox" /><br /><br />
                 price:
-            <asp:TextBox Text='<%# Bind("price") %>' runat="server" ID="priceTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("price") %>' runat="server" ID="priceTextBox" /><br /><br />
                 phoneNumber:
-            <asp:TextBox Text='<%# Bind("phoneNumber") %>' runat="server" ID="phoneNumberTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("phoneNumber") %>' runat="server" ID="phoneNumberTextBox" /><br /><br />
                 <asp:LinkButton runat="server" Text="更新" CommandName="Update" ID="UpdateButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="取消" CommandName="Cancel" ID="UpdateCancelButton" CausesValidation="False" />
             </EditItemTemplate>
             <InsertItemTemplate>
                 driver_id:
-            <asp:TextBox Text='<%# Bind("driver_id") %>' runat="server" ID="driver_idTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("driver_id") %>' runat="server" ID="driver_idTextBox" /><br /><br />
                 age:
-            <asp:TextBox Text='<%# Bind("age") %>' runat="server" ID="ageTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("age") %>' runat="server" ID="ageTextBox" /><br /><br />
                 price:
-            <asp:TextBox Text='<%# Bind("price") %>' runat="server" ID="priceTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("price") %>' runat="server" ID="priceTextBox" /><br /><br />
                 phoneNumber:
-            <asp:TextBox Text='<%# Bind("phoneNumber") %>' runat="server" ID="phoneNumberTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("phoneNumber") %>' runat="server" ID="phoneNumberTextBox" /><br /><br />
                 <asp:LinkButton runat="server" Text="Add" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="Cancel" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
             </InsertItemTemplate>
             <ItemTemplate>
                 driver_id:
-            <asp:Label Text='<%# Eval("driver_id") %>' runat="server" ID="driver_idLabel" /><br />
+            <asp:Label Text='<%# Eval("driver_id") %>' runat="server" ID="driver_idLabel" /><br /><br />
                 age:
-            <asp:Label Text='<%# Bind("age") %>' runat="server" ID="ageLabel" /><br />
+            <asp:Label Text='<%# Bind("age") %>' runat="server" ID="ageLabel" /><br /><br />
                 price:
-            <asp:Label Text='<%# Bind("price") %>' runat="server" ID="priceLabel" /><br />
+            <asp:Label Text='<%# Bind("price") %>' runat="server" ID="priceLabel" /><br /><br />
                 phoneNumber:
-            <asp:Label Text='<%# Bind("phoneNumber") %>' runat="server" ID="phoneNumberLabel" /><br />
+            <asp:Label Text='<%# Bind("phoneNumber") %>' runat="server" ID="phoneNumberLabel" /><br /><br />
 
                 <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edir" />
                 &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
@@ -109,4 +110,6 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     </div>
+        <div class="pt-xxl-4 pb-xxl-4"></div><div class="pt-xxl-4 pb-xxl-4"></div><div class="pt-xxl-4 pb-xxl-4"></div>
+
 </asp:Content>

@@ -1,10 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="rentcar.aspx.cs" Inherits="Assignment_5_test.Service.rentcar" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="pt-xxl-4"></div>
     <div class="pt-xxl-4 pb-xxl-4"></div>
+    <img src='<%= ResolveUrl("~/image/7134128.png") %>' class="img-fluid" alt="...">
+    <div class="pt-xxl-4 pb-xxl-4"></div>
+    <h1 style="text-align: center">Vehicle Rental Services</h1>
     <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="container body-content">
-        <h1 style="text-align: center">Vehicle Rental Services</h1>
         <style>
             .center-container {
                 text-align: center;
@@ -24,7 +27,7 @@
                 }
         </style>
 
-        <asp:GridView ID="GridView1" runat="server" Width="100%" DataSourceID="rentcarData" AutoGenerateColumns="False" DataKeyNames="product_id"  ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="GridView1" runat="server" Width="100%" DataSourceID="rentcarData" AutoGenerateColumns="False" DataKeyNames="product_id" ForeColor="#333333" GridLines="None">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
                 <asp:BoundField DataField="product_id" HeaderText="product_id" ReadOnly="True" SortExpression="product_id">
@@ -55,7 +58,7 @@
                     <ItemTemplate>
                         <asp:HyperLink ID="lnkBuy" runat="server" Text="Rent Now!" NavigateUrl='<%# GetPurchaseUrl(Eval("product_id"), Eval("category_id")) %>'></asp:HyperLink>
                     </ItemTemplate>
-                    <ItemStyle HorizontalAlign="Center"  Width="100px"></ItemStyle>
+                    <ItemStyle HorizontalAlign="Center" Width="100px"></ItemStyle>
                 </asp:TemplateField>
             </Columns>
             <EditRowStyle BackColor="#999999"></EditRowStyle>

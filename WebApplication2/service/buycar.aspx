@@ -1,11 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="buycar.aspx.cs" Inherits="Assignment_5_test.Service.buycar" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+        <div class="pt-xxl-4"></div>
     <div class="pt-xxl-4 pb-xxl-4"></div>
+    <img src='<%= ResolveUrl("~/image/7134128.png") %>' class="img-fluid" alt="...">
+    <div class="pt-xxl-4 pb-xxl-4"></div>
+    <h1 style="text-align: center">Vehicles Available for Sale</h1>
     <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="container body-content">
         <!-- 購買車輛 -->
-        <h1 style="text-align: center">Vehicles Available for Sale</h1>
+        
         <style>
             .center-container {
                 text-align: center;
@@ -21,8 +25,8 @@
                 }
         </style>
         <div class="center-container">
-            <asp:GridView ID="GridView1" runat="server" DataSourceID="BuyCarData" AutoGenerateColumns="False" DataKeyNames="product_id" Width="100%" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
-                <AlternatingRowStyle BackColor="#CCCCCC" />
+            <asp:GridView ID="GridView1" runat="server" DataSourceID="BuyCarData" AutoGenerateColumns="False" DataKeyNames="product_id" Width="100%" ForeColor="#333333" GridLines="None">
+                <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
                     <asp:BoundField DataField="product_id" HeaderText="product_id" ReadOnly="True" SortExpression="product_id" />
                     <asp:BoundField DataField="title" HeaderText="title" SortExpression="title" />

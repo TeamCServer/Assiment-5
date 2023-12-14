@@ -2,12 +2,14 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main aria-labelledby="title">
+        <div class="pt-xxl-4"></div>
         <div class="pt-xxl-4 pb-xxl-4"></div>
+        <img src='<%= ResolveUrl("~/image/7134128.png") %>' class="img-fluid" alt="...">
         <div class="pt-xxl-4 pb-xxl-4"></div>
+        <h1 style="text-align: center">Cantact Us</h1>
         <div class="pt-xxl-4 pb-xxl-4"></div>
         <div class="container body-content">
             <!--   <h2 id="title"><%: Title %>.</h2>  -->
-            <h3>Cantact Us</h3>
             In order to provide you with the quickest service, please browse through the relevant instructions first. 
             If you still can't find the answer to your question, please leave your query, and we'll be dedicated to 
             assisting you.<br />

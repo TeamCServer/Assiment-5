@@ -1,7 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="edit_product2.aspx.cs" Inherits="Assighnment_5_Edit_UDP.Category.edit_product2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="pt-xxl-4"></div>
     <div class="pt-xxl-4 pb-xxl-4"></div>
+    <img src='<%= ResolveUrl("~/image/7134128.png") %>' class="img-fluid" alt="...">
+    <div class="pt-xxl-4 pb-xxl-4"></div>
+    <h1 style="text-align: center">Edit Product Imformation</h1>
     <div class="pt-xxl-4 pb-xxl-4"></div>
     <div class="container body-content">
         <h1 style="text-align: center">Edit Product
@@ -12,59 +16,59 @@
         <asp:FormView ID="FormView1" runat="server" DataKeyNames="product_id" DataSourceID="SqlDataSource1">
             <EditItemTemplate>
                 product_id:
-            <asp:Label Text='<%# Eval("product_id") %>' runat="server" ID="product_idLabel1" /><br />
+            <asp:Label Text='<%# Eval("product_id") %>' runat="server" ID="product_idLabel1" /><br /><br />
                 title:
-            <asp:TextBox Text='<%# Bind("title") %>' runat="server" ID="titleTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("title") %>' runat="server" ID="titleTextBox" /><br /><br />
                 category_id:
-            <asp:TextBox Text='<%# Bind("category_id") %>' runat="server" ID="category_idTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("category_id") %>' runat="server" ID="category_idTextBox" /><br /><br />
                 payment:
-            <asp:TextBox Text='<%# Bind("payment") %>' runat="server" ID="paymentTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("payment") %>' runat="server" ID="paymentTextBox" /><br /><br />
                 location:
-            <asp:TextBox Text='<%# Bind("location") %>' runat="server" ID="locationTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("location") %>' runat="server" ID="locationTextBox" /><br /><br />
                 country:
-            <asp:TextBox Text='<%# Bind("country") %>' runat="server" ID="countryTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("country") %>' runat="server" ID="countryTextBox" /><br /><br />
                 condition:
-            <asp:TextBox Text='<%# Bind("condition") %>' runat="server" ID="conditionTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("condition") %>' runat="server" ID="conditionTextBox" /><br /><br />
                 price:
-            <asp:TextBox Text='<%# Bind("price") %>' runat="server" ID="priceTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("price") %>' runat="server" ID="priceTextBox" /><br /><br />
                 <asp:LinkButton runat="server" Text="Update" CommandName="Update" ID="UpdateButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="取消" CommandName="Cancel" ID="UpdateCancelButton" CausesValidation="False" />
             </EditItemTemplate>
             <InsertItemTemplate>
                 product_id:
-            <asp:TextBox Text='<%# Bind("product_id") %>' runat="server" ID="product_idTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("product_id") %>' runat="server" ID="product_idTextBox" /><br /><br />
                 title:
-            <asp:TextBox Text='<%# Bind("title") %>' runat="server" ID="titleTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("title") %>' runat="server" ID="titleTextBox" /><br /><br />
                 category_id:
-            <asp:TextBox Text='<%# Bind("category_id") %>' runat="server" ID="category_idTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("category_id") %>' runat="server" ID="category_idTextBox" /><br /><br />
                 payment:
-            <asp:TextBox Text='<%# Bind("payment") %>' runat="server" ID="paymentTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("payment") %>' runat="server" ID="paymentTextBox" /><br /><br />
                 location:
-            <asp:TextBox Text='<%# Bind("location") %>' runat="server" ID="locationTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("location") %>' runat="server" ID="locationTextBox" /><br /><br />
                 country:
-            <asp:TextBox Text='<%# Bind("country") %>' runat="server" ID="countryTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("country") %>' runat="server" ID="countryTextBox" /><br /><br />
                 condition:
-            <asp:TextBox Text='<%# Bind("condition") %>' runat="server" ID="conditionTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("condition") %>' runat="server" ID="conditionTextBox" /><br /><br />
                 price:
-            <asp:TextBox Text='<%# Bind("price") %>' runat="server" ID="priceTextBox" /><br />
+            <asp:TextBox Text='<%# Bind("price") %>' runat="server" ID="priceTextBox" /><br /><br />
                 <asp:LinkButton runat="server" Text="Add" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="取消" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
             </InsertItemTemplate>
             <ItemTemplate>
                 product_id:
-            <asp:Label Text='<%# Eval("product_id") %>' runat="server" ID="product_idLabel" /><br />
+            <asp:Label Text='<%# Eval("product_id") %>' runat="server" ID="product_idLabel" /><br /><br />
                 title:
-            <asp:Label Text='<%# Bind("title") %>' runat="server" ID="titleLabel" /><br />
+            <asp:Label Text='<%# Bind("title") %>' runat="server" ID="titleLabel" /><br /><br />
                 category_id:
-            <asp:Label Text='<%# Bind("category_id") %>' runat="server" ID="category_idLabel" /><br />
+            <asp:Label Text='<%# Bind("category_id") %>' runat="server" ID="category_idLabel" /><br /><br />
                 payment:
-            <asp:Label Text='<%# Bind("payment") %>' runat="server" ID="paymentLabel" /><br />
+            <asp:Label Text='<%# Bind("payment") %>' runat="server" ID="paymentLabel" /><br /><br />
                 location:
-            <asp:Label Text='<%# Bind("location") %>' runat="server" ID="locationLabel" /><br />
+            <asp:Label Text='<%# Bind("location") %>' runat="server" ID="locationLabel" /><br /><br />
                 country:
-            <asp:Label Text='<%# Bind("country") %>' runat="server" ID="countryLabel" /><br />
+            <asp:Label Text='<%# Bind("country") %>' runat="server" ID="countryLabel" /><br /><br />
                 condition:
-            <asp:Label Text='<%# Bind("condition") %>' runat="server" ID="conditionLabel" /><br />
+            <asp:Label Text='<%# Bind("condition") %>' runat="server" ID="conditionLabel" /><br /><br />
                 price:
-            <asp:Label Text='<%# Bind("price") %>' runat="server" ID="priceLabel" /><br />
+            <asp:Label Text='<%# Bind("price") %>' runat="server" ID="priceLabel" /><br /><br />
                 <asp:LinkButton runat="server" Text="Edit" CommandName="Edit" ID="EditButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="刪除" CommandName="Delete" ID="DeleteButton" CausesValidation="False" />&nbsp;<asp:LinkButton runat="server" Text="新增" CommandName="New" ID="NewButton" CausesValidation="False" />
             </ItemTemplate>
         </asp:FormView>
@@ -181,4 +185,5 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     </div>
+    <div class="pt-xxl-4 pb-xxl-4"></div><div class="pt-xxl-4 pb-xxl-4"></div><div class="pt-xxl-4 pb-xxl-4"></div>
 </asp:Content>
